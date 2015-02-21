@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%"
+     height="100%"
+     preserveAspectRatio="xMidYMid meet"
+     viewBox="0 0 296 133"
+     text-rendering="optimizeLegibility">
+   <defs>
+      <filter id="MyFilter"
+              filterUnits="objectBoundingBox"
+              x="-10%"
+              y="-10%"
+              width="150%"
+              height="150%">
+		       <desc>Produces a 3D lighting effect suitable for pies and lines</desc>
+		       <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+		       <feOffset in="blur" dx="3" dy="5" result="offsetBlur"/>
+		       <feSpecularLighting in="blur"
+                             surfaceScale="5"
+                             specularConstant="1"
+                             specularExponent="30"
+                             style="lighting-color:White"
+                             result="specOut">
+			         <fePointLight x="-5000" y="-10000" z="20000"/>
+		       </feSpecularLighting>
+		       <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+		       <feComposite in="SourceGraphic"
+                      in2="specOut"
+                      operator="arithmetic"
+                      k1="0"
+                      k2="1"
+                      k3="1"
+                      k4="0"
+                      result="litPaint"/>
+		       <feMerge>
+			         <feMergeNode in="offsetBlur"/>
+			         <feMergeNode in="litPaint"/>
+		       </feMerge>
+	     </filter>
+   </defs>
+   <g xmlns:c="http://www.w3.org/ns/xproc-step"
+      id="graph0"
+      class="graph"
+      transform="scale(1 1) rotate(0) translate(4 129)">
+      <title>my title</title>
+      <polygon fill="white"
+               stroke="none"
+               points="-4,4 -4,-129 292,-129 292,4 -4,4"/>
+
+      <g>
+         <g filter="url(#MyFilter)">
+            <title>struct0</title>
+            <polygon fill="none"
+                     stroke="black"
+                     points="28,-88.5 28,-124.5 157,-124.5 157,-88.5 28,-88.5"/>
+            <polyline fill="none" stroke="black" points="62,-88.5 62,-124.5 "/>
+            <polyline fill="none" stroke="black" points="116,-88.5 116,-124.5 "/>
+         </g>
+         <g>
+            <text text-anchor="middle"
+                  x="45"
+                  y="-102.8"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">left</text>
+            <text text-anchor="middle"
+                  x="89"
+                  y="-102.8"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">middle</text>
+            <text text-anchor="middle"
+                  x="136.5"
+                  y="-102.8"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">right</text>
+         </g>
+      </g>
+
+      <g>
+         <g filter="url(#MyFilter)">
+            <title>struct1</title>
+            <polygon fill="none" stroke="black" points="0,-17 0,-53 75,-53 75,-17 0,-17"/>
+            <polyline fill="none" stroke="black" points="37,-17 37,-53 "/>
+         </g>
+         <g>
+            <text text-anchor="middle"
+                  x="18.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">one</text>
+            <text text-anchor="middle"
+                  x="56"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">two</text>
+         </g>
+      </g>
+
+      <g id="edge1" class="edge">
+         <title>struct0:11-&gt;struct1:20</title>
+         <path fill="none"
+               stroke="black"
+               d="M88.5,-88C88.5,-57.7365 34.9063,-80.8834 21.5078,-63.9725"/>
+         <polygon fill="black"
+                  stroke="black"
+                  points="24.7386,-62.5633 18.5,-54 18.0368,-64.5847 24.7386,-62.5633"/>
+      </g>
+
+      <g>
+         <g filter="url(#MyFilter)">
+            <title>struct2</title>
+            <polygon fill="none"
+                     stroke="black"
+                     points="93,-0.5 93,-69.5 288,-69.5 288,-0.5 93,-0.5"/>
+            <polyline fill="none" stroke="black" points="172,-0.5 172,-69.5 "/>
+            <polyline fill="none" stroke="black" points="172,-46.5 242,-46.5 "/>
+            <polyline fill="none" stroke="black" points="195,-23.5 195,-46.5 "/>
+            <polyline fill="none" stroke="black" points="219,-23.5 219,-46.5 "/>
+            <polyline fill="none" stroke="black" points="172,-23.5 242,-23.5 "/>
+            <polyline fill="none" stroke="black" points="242,-0.5 242,-69.5 "/>
+            <polyline fill="none" stroke="black" points="265,-0.5 265,-69.5 "/>
+         </g>
+         <g>
+            <text text-anchor="middle"
+                  x="132.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">hello world</text>
+            <text text-anchor="middle"
+                  x="207"
+                  y="-54.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">b</text>
+            <text text-anchor="middle"
+                  x="183.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">c</text>
+            <text text-anchor="middle"
+                  x="207"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">d</text>
+            <text text-anchor="middle"
+                  x="230.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">e</text>
+            <text text-anchor="middle"
+                  x="207"
+                  y="-8.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">f</text>
+            <text text-anchor="middle"
+                  x="253.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">g</text>
+            <text text-anchor="middle"
+                  x="276.5"
+                  y="-31.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">h</text>
+         </g>
+      </g>
+
+      <g id="edge2" class="edge">
+         <title>struct0:12-&gt;struct2:3121</title>
+         <path fill="none"
+               stroke="black"
+               d="M136.5,-88C136.5,-70.1115 157.988,-80.4596 172.5,-70 178.922,-65.3711 185.255,-59.5412 190.731,-53.9741"/>
+         <polygon fill="black"
+                  stroke="black"
+                  points="193.288,-56.3634 197.594,-46.683 188.191,-51.5652 193.288,-56.3634"/>
+      </g>
+   </g>
+</svg>

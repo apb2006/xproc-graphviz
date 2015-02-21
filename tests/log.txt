@@ -1,0 +1,7 @@
+<px:document-sequence xmlns:px='http://xmlcalabash.com/ns/document-sequence'
+                      port='result'
+                      xpl-file='file:/C:/Users/andy/workspace/xproc-graphviz/tests/lib_test.xpl'
+                      xpl-line='17'
+                      dateTime='2015-02-21T22:57:04+00:00'>
+<px:document><c:result xmlns:c="http://www.w3.org/ns/xproc-step">file:/C:/Users/andy/workspace/xproc-graphviz/tests/out/dotml.svg</c:result></px:document>
+</px:document-sequence>

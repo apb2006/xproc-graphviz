@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%"
+     height="100%"
+     preserveAspectRatio="xMidYMid meet"
+     viewBox="0 0 62 116"
+     text-rendering="optimizeLegibility">
+   <defs>
+      <filter id="MyFilter"
+              filterUnits="objectBoundingBox"
+              x="-10%"
+              y="-10%"
+              width="150%"
+              height="150%">
+		       <desc>Produces a 3D lighting effect suitable for pies and lines</desc>
+		       <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+		       <feOffset in="blur" dx="3" dy="5" result="offsetBlur"/>
+		       <feSpecularLighting in="blur"
+                             surfaceScale="5"
+                             specularConstant="1"
+                             specularExponent="30"
+                             style="lighting-color:White"
+                             result="specOut">
+			         <fePointLight x="-5000" y="-10000" z="20000"/>
+		       </feSpecularLighting>
+		       <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+		       <feComposite in="SourceGraphic"
+                      in2="specOut"
+                      operator="arithmetic"
+                      k1="0"
+                      k2="1"
+                      k3="1"
+                      k4="0"
+                      result="litPaint"/>
+		       <feMerge>
+			         <feMergeNode in="offsetBlur"/>
+			         <feMergeNode in="litPaint"/>
+		       </feMerge>
+	     </filter>
+   </defs>
+   <g xmlns:c="http://www.w3.org/ns/xproc-step"
+      id="graph0"
+      class="graph"
+      transform="scale(1 1) rotate(0) translate(4 112)">
+      <title>G</title>
+      <polygon fill="white" stroke="none" points="-4,4 -4,-112 58,-112 58,4 -4,4"/>
+
+      <g>
+         <g filter="url(#MyFilter)">
+            <title>a</title>
+            <ellipse fill="none"
+                     stroke="black"
+                     cx="27"
+                     cy="-90"
+                     rx="27"
+                     ry="18"/>
+         </g>
+         <g>
+            <text text-anchor="middle"
+                  x="27"
+                  y="-86.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">a</text>
+         </g>
+      </g>
+
+      <g>
+         <g filter="url(#MyFilter)">
+            <title>b</title>
+            <ellipse fill="none"
+                     stroke="black"
+                     cx="27"
+                     cy="-18"
+                     rx="27"
+                     ry="18"/>
+         </g>
+         <g>
+            <text text-anchor="middle"
+                  x="27"
+                  y="-14.3"
+                  font-family="Times New Roman,serif"
+                  font-size="14.00">b</text>
+         </g>
+      </g>
+
+      <g id="edge1" class="edge">
+         <title>a-&gt;b</title>
+         <path fill="none"
+               stroke="black"
+               d="M27,-71.6966C27,-63.9827 27,-54.7125 27,-46.1124"/>
+         <polygon fill="black"
+                  stroke="black"
+                  points="30.5001,-46.1043 27,-36.1043 23.5001,-46.1044 30.5001,-46.1043"/>
+      </g>
+   </g>
+</svg>

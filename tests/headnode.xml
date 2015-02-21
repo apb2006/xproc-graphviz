@@ -1,0 +1,23 @@
+<graph file-name="graphs/headport" nodesep="0.6" ranksep="0.6">
+
+  <node id="NW" shape="point" />
+  <node id="N" shape="point" />
+  <node id="NE" shape="point" />
+  <node id="E" shape="point" />
+  <node id="head" label="head node" shape="box" />
+  <sub-graph rank="sink">
+
+    <node id="W" shape="point" />
+    <node id="SW" shape="point" />
+    <node id="S" shape="point" />
+    <node id="SE" shape="point" />
+  </sub-graph>
+  <edge to="head" from="N" headlabel=":n" headport=":n" />
+  <edge to="head" from="NE" headlabel=":ne" headport=":ne" />
+  <edge to="head" from="E" headlabel=":e" headport=":e" />
+  <edge to="head" from="SE" headlabel=":se" headport=":se" />
+  <edge to="head" from="S" headlabel=":s" headport=":s" />
+  <edge to="head" from="SW" headlabel=":sw" headport=":sw" />
+  <edge to="head" from="W" headlabel=":w" headport=":w" />
+  <edge to="head" from="NW" headlabel=":nw" headport=":nw" />
+</graph>
