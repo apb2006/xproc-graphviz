@@ -1,6 +1,9 @@
-<p:library version="1.0" xmlns:p="http://www.w3.org/ns/xproc"
-	xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:cx="http://xmlcalabash.com/ns/extensions" xmlns:dot="https://github.com/apb2006/xproc-graphviz">
+<p:library version="1.0" 
+    xmlns:p="http://www.w3.org/ns/xproc"
+	xmlns:c="http://www.w3.org/ns/xproc-step" 
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:cx="http://xmlcalabash.com/ns/extensions" 
+	xmlns:dot="https://github.com/apb2006/xproc-graphviz">
 	<p:documentation>Interface to Graphviz
 	Copyright 2015 Andy Bunce
 
